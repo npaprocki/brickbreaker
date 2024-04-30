@@ -123,8 +123,12 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 		} catch (FileNotFoundException e) {
 			System.out.println("Unable to open file for reading");
 		}
-		while (scoreList.size() < 5) {
-			scoreList.add(new User("name", 0, 100000));
+		if (scoreList.size() < 5) {
+			scoreList.add(new User("John", 30, 100000));
+			scoreList.add(new User("Sam", 20, 100000));
+			scoreList.add(new User("Tom", 15, 100000));
+			scoreList.add(new User("Greg", 10, 100000));
+			scoreList.add(new User("Smith", 5, 100000));
 		}
 	}
 	
